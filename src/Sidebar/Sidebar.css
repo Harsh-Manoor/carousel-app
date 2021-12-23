@@ -15,7 +15,8 @@
     height: 100vh;
     padding: 20px;
     border-right: 1px solid grey;
-    position: static;
+    position: sticky;
+    top: 0;
 }
 
 .sidebar-data{

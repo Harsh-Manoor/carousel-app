@@ -1,0 +1,40 @@
+.tweetBox{
+    width: 100%;
+    height: auto;
+    padding: 15px;
+    border-bottom: 1px solid grey;
+}
+
+.tweetBox--input{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-bottom: 20px;
+}
+
+.tweetBox--input > input{
+    border: none;
+    font-size: 20px;
+    margin-left: 20px;
+    flex: 1;
+    overflow-wrap: break-word;
+    word-break: break-all;
+}
+
+.tweetBox--input > input:focus{
+    outline: none;
+}
+
+.tweetBox-button{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.tweetBox-tweet_button{
+    border-radius: 50px !important;
+    background-color: #1da1f2 !important;
+    font-size: 14px !important;
+    padding: auto !important;
+    font-family: 'Poppins', sans-serif !important;
+}

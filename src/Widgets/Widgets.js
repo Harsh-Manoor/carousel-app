@@ -4,7 +4,9 @@ import "./Widgets.css"
 const Widgets = () => {
     return (
         <>
-            <h1>Widgets</h1>   
+            <div className="widgets">
+                <h1>Widgets</h1>   
+            </div>
         </>
     )
 }
