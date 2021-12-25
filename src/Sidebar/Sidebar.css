@@ -1,8 +1,7 @@
 *{
     margin: 0px;
     padding: 0px;
-    box-sizing: border-box;
-    --twitter-color : rgb(3, 150, 248);   
+    box-sizing: border-box; 
 }
 
 .sidebar{

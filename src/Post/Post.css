@@ -1,0 +1,33 @@
+*{
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+}
+
+.post{
+    display: flex;
+    align-items: flex-start;
+    border-bottom: 1px solid gray;
+    height: auto;
+    width: 100%;
+    padding: 10px 20px;
+}
+
+.post-body{
+    flex: 1;
+    padding: 10px;
+}
+
+.post-body > img{
+    border-radius: 15px;
+}
+
+.post-footer{
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+}
+
+.verified-badge{
+    color: var(--twitter-color);
+}
