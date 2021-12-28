@@ -2,26 +2,31 @@ import { Avatar } from '@mui/material'
 import React from 'react'
 import "./Post.css"
 
-const Post = ({displayName,userName,verified,timestamp,text,image,avatar}) => {
+const Post = ({displayName,userName,verified,text,image,avatar}) => {
+    
     return (
         <>
             <div className='post'>
                 <div className='post-avatar'>
-                    <Avatar />
+                    <Avatar src={avatar}/>
                 </div>
 
                 <div className='post-body'>
                     <div className='post-header'>
                         <div className='post-header-text'>
-                            <h3>Harsh{" "} <span className='verified-badge'><i class="fas fa-certificate"></i></span> @UserName</h3>
+                            <h3>
+                                <span className='post-displayName'>{displayName}{" "}</span>
+                                <span className='verified-badge'>{verified && <i class="fas fa-certificate"></i>}</span>
+                                <span className='post-userName'>{" "}@{userName}</span>
+                            </h3>
                         </div>
 
                         <div className='post-headerDescription'>
-                            <p>Lorum Ipsum hello world</p>
+                            <p>{text}</p>
                         </div>
                     </div>
 
-                    <img src="https://media.giphy.com/media/Lq5r6qXmb5RUIZGbT0/giphy.gif" alt="post"/>
+                    <img src={image} alt="post"/>
                     
                     <div className='post-footer'>
                         <i class="far fa-comment-alt"></i>

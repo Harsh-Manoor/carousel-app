@@ -31,3 +31,13 @@
 .verified-badge{
     color: var(--twitter-color);
 }
+
+.post-userName{
+    color: #d8d8d8;
+    font-style: italic;
+    font-size: 14px;
+}
+
+.post-headerDescription{
+    margin-bottom: 10px;
+}
